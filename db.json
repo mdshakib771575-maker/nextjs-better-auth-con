@@ -1,0 +1,58 @@
+{
+  "models": [
+    {
+      "id": 1,
+      "name": "ChatGPT +++",
+      "category": "AI Chatbot",
+      "company": "OpenAI",
+      "price": 30,
+      "rating": 4.8,
+      "description": "AI chatbot for answering questions, coding, and content writing"
+    },
+    {
+      "id": 2,
+      "name": "Google Gemini",
+      "category": "AI Assistant",
+      "company": "Google",
+      "price": 15,
+      "rating": 4.6,
+      "description": "Google's AI tool for writing, research, and productivity"
+    },
+    {
+      "id": 3,
+      "name": "Midjourney",
+      "category": "Image Generator",
+      "company": "Midjourney Inc.",
+      "price": 20,
+      "rating": 4.7,
+      "description": "AI tool for generating high-quality images from text prompts"
+    },
+    {
+      "id": 4,
+      "name": "DALL·E",
+      "category": "Image Generator",
+      "company": "OpenAI",
+      "price": 20,
+      "rating": 4.7,
+      "description": "Create images using AI from text descriptions"
+    },
+    {
+      "id": 5,
+      "name": "Grammarly",
+      "category": "Writing Assistant",
+      "company": "Grammarly Inc.",
+      "price": 30,
+      "rating": 4.5,
+      "description": "AI-powered grammar checker and writing assistant"
+    },
+    {
+      "id": 6,
+      "name": "Runway ML",
+      "category": "Video Editing AI",
+      "company": "Runway",
+      "price": 10,
+      "rating": 4.6,
+      "description": "AI tool for video editing and content creation"
+    }
+  ]
+}
