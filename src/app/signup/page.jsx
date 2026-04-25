@@ -27,8 +27,8 @@ const SignUpPage =  ()=> {
     console.log(data,error)
   }
   return (
-    <div className='mx-auto mt-10 border rounded-2xl shadow-2xl  p-10'>
-      <Form className="flex w-96 flex-col gap-4" onSubmit={Onsubmit}>
+    <div className=''>
+      <Form className="flex w-96 flex-col gap-4 mx-auto mt-10 rounded-2xl shadow-2xl p-10" onSubmit={Onsubmit}>
         <TextField
           isRequired
           name="name"

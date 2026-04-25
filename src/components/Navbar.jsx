@@ -1,3 +1,6 @@
+"use client"
+import { authClient } from '@/lib/auth-client';
+import { Button } from '@heroui/react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -5,8 +8,17 @@ const navbar = () => {
     const links =<>
      <li> <Link href={'/'}>Home</Link> </li>
      <li> <Link href={'/models'}>Models</Link></li> 
-     <li> <Link href={'/signup'}>SignUp</Link></li> 
+   
     </>
+       const { 
+        data: session, 
+    } = authClient.useSession() 
+    
+    const users = session?.user
+    const handalSignOut = ()=>{
+      authClient.signOut();
+
+    }
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
@@ -29,8 +41,15 @@ const navbar = () => {
      {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-3 ">
+    <div className='flex gap-2 items-center'>
+     <button className='btn rounded-2xl'><Link href={'/signup'}>SignUp</Link></button>
+     <button className='btn rounded-2xl '><Link href={'/signin'}>SignIn</Link></button>
+     <div>
+      {users?.name}
+     </div>
+     <Button onClick={handalSignOut} variant='danger'>SignOut</Button>
+     </div>
   </div>
 </div>
         </div>
